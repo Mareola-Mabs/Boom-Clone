@@ -1,0 +1,39 @@
+main .main                                          {
+
+        &__contact-a                                    {width: 100%;
+                                                        padding: 20px 0;}
+
+        &__contact-grid                                 {display: grid;
+                                                        grid-template-columns: repeat(2, 1fr);
+                                                        width: 100%;
+                                                        grid-gap: 20px;
+                                                        padding: 0 3%;}
+
+        &__contact-a                                    {background: rgba(237, 237, 237, 1.0);
+                                                        padding: 20px 15px;
+                                                        padding-bottom: 100px;
+                                                    
+            section                                         {display: flex;
+                                                            align-items: center;
+                                                            color: rgba(51, 51, 51, 1.0);
+                                                            font-size: 1.7rem;
+                                                            gap: 10px;}
+
+            h3                                              {color: rgba(51, 51, 51, 1.0);
+                                                            margin-top: 20px;
+                                                            margin-bottom: 10px;
+                                                            font-size: 1rem;}
+
+            p                                               {color: rgba(51, 51, 51, 1.0);
+                                                            margin-top: 10px;}
+
+            a                                               {text-decoration: none;
+                                                            color: $top__nav-link;
+                                                        
+                &:hover                                         {text-decoration: underline;}
+                                                        
+                                                            }
+                                                    
+                                                        }
+                                                    
+                                                    }

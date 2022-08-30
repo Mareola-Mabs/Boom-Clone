@@ -1,0 +1,728 @@
+// For Tablet
+@media only screen and (max-width:1000px){
+// The Header
+header                                              {box-shadow: 0 0 2px 2px #CECECE;
+                                                    width: 750px;
+                                                    left: 0;
+                                                    right: 0;
+                                                    top: 0;
+                                                    margin-left: auto;
+                                                    margin-right: auto;
+                                                    position: fixed;
+                                                    z-index: 40;
+                                                    background: $primary__color;
+                                                
+    .header                                             {
+
+        &__nav-items                                        {display: flex;
+                                                            width: 100%;
+        
+            ul                                                  {display: flex;
+            
+                li                                                  {list-style: none;
+
+                    a                                                   {text-decoration: none;
+                                                                        color: $primary__color;
+                                                                        height: 100%;
+                                                                        @include flexCenter;
+                                                                        background: none;
+                                                                        font-size: sizes(smallest1);
+
+                        &:nth-of-type(odd)                              {padding: 0px 10px;}
+                                                                    
+                        &:hover                                             {background: $secondary__hover;}
+                                                                    
+                                                                        }
+                    
+                                                                    }
+            
+                                                                }
+
+                                                            }
+
+
+
+                                                        }
+                                                
+                                                    }
+// End of Header
+
+
+// The Main
+main                                                {margin: 0 auto;
+                                                    width: 725px;
+                                                
+    .main                                               {
+
+        &__slider-underlay                                  {position: absolute;
+                                                            bottom: 0;
+                                                            padding: 20px;
+                                                            height: 45%;
+                                                            width: 100%;
+                                                            background: rgba(0, 0, 0, 0.5);
+                                                        
+            h1                                                  {font-size: 1.3rem;}
+                                                        
+                                                            }
+
+
+    &__financial-section                                {width: 100%;
+                                                        position: relative;
+                                                        margin-top: 40px;}
+
+    &__financial-section--img                           {width: 100%;
+                                                        height: 100%;
+                                                        object-fit: cover;}
+
+    &__financial-section-a                              {position: absolute;
+                                                        top: 0;
+                                                        display: grid;
+                                                        grid-template-columns: 80% 20%;
+                                                        padding: 0 3%;
+                                                        width: 100%;
+                                                        height: 100%;}
+
+    &__financial-section-b                              {position: absolute;
+                                                        top: 0;
+                                                        display: grid;
+                                                        grid-template-columns: 20% 80%;
+                                                        padding: 0 3%;
+                                                        width: 100%;
+                                                        height: 100%;}
+
+    &__financial__sectiona                              {padding: 20px 3%;
+
+        section                                             {display: flex;
+                                                            align-items: center;
+                                                        
+            span                                                {color: rgba(51, 51, 51, 1.0);
+                                                                font-size: 1rem;}
+
+                                                            }
+
+        ul li                                               {list-style: none;
+                                                            margin-top: 20px;
+                                                            color: rgba(51, 51, 51, 1.0);
+                                                            font-size: 0.9rem;}
+
+        ul                                                  {margin-top: 10px;}
+
+        p                                                   {margin-top: 20px;
+                                                            color: rgba(51, 51, 51, 1.0);
+                                                            font-size: 0.9rem;
+                                                        
+            a                                                   {text-decoration: none;
+                                                                color: $top__nav-link;
+                                                            
+                &:hover                                             {text-decoration: underline;}
+                                                            
+                                                                }
+                                                        
+                                                            }
+
+
+                                                        }
+
+
+                                                        }
+                                                        
+                                                
+                                                    }
+// End of Main
+
+// The Footer Nav
+.footer__nav                                        {margin: 0 auto;
+                                                    width: 725px;
+                                                    margin-top: 10px;
+                                                    color: $top__nav-link;
+                                                    font-size: sizes(smallest1);
+                                                    padding-left: 1%;
+                                                
+    a                                                   {text-decoration: none;
+                                                        color: $top__nav-link;}
+                                                    
+                                                    }
+ // End of Footer nav
+
+ // The Footer
+footer                                              {width: 750px;}
+                                    
+// End of Footer
+
+
+}
+// End of Tablet
+
+// For Mobile
+@media only screen and (max-width:770px){
+    // The Header
+header                                              {box-shadow: 0 0 2px 2px #CECECE;
+                                                    width: 100%;
+                                                    left: 0;
+                                                    right: 0;
+                                                    top: 0;
+                                                    margin-left: auto;
+                                                    margin-right: auto;
+                                                    position: fixed;
+                                                    z-index: 40;
+                                                    background: $primary__color;
+                                                
+    .header                                             {
+
+         &__top                                             {display: flex;
+                                                            background: $top__nav-bg;
+                                                            padding: 15px 10px;
+                                                            padding-bottom: 20px;}
+
+        &__text                                             {color: $top__nav-color;
+        
+            span                                                {font-weight: bold;
+                                                                font-size: 0.9rem;}
+
+            p                                                   {margin-top: 3px;
+                                                                font-size: 0.9rem;}
+
+            a                                                   {color: $top__nav-link;
+                                                                text-decoration: none;
+                                                            
+                &:hover                                             {text-decoration: underline;}
+                                                            
+                                                                }
+        
+                                                            }
+
+        // The Nav Items
+        &__nav-items                                        {display: none;
+                                                            width: 100%;
+        
+            ul                                                  {display: flex;
+            
+                li                                                  {list-style: none;
+
+                    a                                                   {text-decoration: none;
+                                                                        color: $primary__color;
+                                                                        height: 100%;
+                                                                        @include flexCenter;
+                                                                        background: none;
+                                                                        font-size: sizes(smallest1);
+
+                        &:nth-of-type(odd)                              {padding: 0px 10px;}
+                                                                    
+                        &:hover                                             {background: $secondary__hover;}
+                                                                    
+                                                                        }
+                    
+                                                                    }
+            
+                                                                }
+
+                                                            }
+
+        // The Hamburger
+        &__burger                                           {height: 100%;
+                                                            margin-left: 10px;
+                                                            @include flexCenter;
+                                                            display: flex;
+                                                            
+                                                            
+                                                        
+            button                                              {width: 45px;
+                                                                height: 30px;
+                                                                background: $top__nav-link;
+                                                                border: 1px solid $primary__color;
+                                                                border-radius: 4px;
+                                                                color: $primary__color;
+                                                                cursor: pointer;
+                                                                font-size: 2rem;
+                                                                @include flexCenter;
+                                                                position: relative;
+
+                &.outline                                           {outline: 4px solid rgba(255, 255, 255, 0.5);}
+                                                            
+                .burger                                             {background: $primary__color;
+                                                                    height: 2px;
+                                                                    width: 50%;
+                                                                    border-radius: 2px;
+                                                                    position: relative;
+                                                                
+                    &::before                                           {content: '';
+                                                                        background: $primary__color;
+                                                                        height: 2px;
+                                                                        width: 22px;
+                                                                        transform: translateY(-6px) translateX(-11px);
+                                                                        border-radius: 2px;
+                                                                        position: absolute;}
+
+                    &::after                                            {content: '';
+                                                                        background: $primary__color;
+                                                                        height: 2px;
+                                                                        width: 22px;
+                                                                        transform: translateY(6px) translateX(-11px);
+                                                                        border-radius: 2px;
+                                                                        position: absolute;}
+                                                                
+                                                                    }
+                                                            
+                                                                }
+
+                                                            }
+
+        // The Logo
+        &__logo                                             {padding-left: 1.1%;
+        
+            img                                                 {width: 200px;}
+        
+                                                            }   
+                                                            
+        // Header Items
+        &__items                                            {height: 100%;
+                                                            display: flex; 
+                                                            align-items: center;
+                                                            position: absolute;
+                                                            right: 0;
+                                                            top: 23px;
+                                                            
+            ul                                                  {display: flex;
+                                                                align-items: center;
+            
+                li                                                  {list-style: none;
+                                                                    display: flex;
+
+                    img                                                 {width: 40px;
+                    
+                        &.create_acc                                        {width: 55px;
+                                                                            height: 40px;}
+
+                                                                        }                                          
+
+                                                                    }
+            
+                                                                }
+
+                                                            }
+
+        // Header Icons
+        &__nav-icons                                        {display: flex;
+                                                            width: 30%;
+                                                            position: absolute;
+                                                            justify-content: flex-end;
+                                                            margin-right: 1%;
+                                                            right: 0;
+
+            ul                                                  {display: flex;
+            
+                li                                                  {list-style: none;
+
+                    &:first-child                                   {margin-right: 8px;}
+                
+                    a                                                   {text-decoration: none;}           
+                
+                                                                    }
+            
+                                                                }
+        
+                                                            }
+
+
+
+                                                        }
+                                                
+                                                    }
+
+// Main Boom Features
+main .main                                          {
+
+        &__expert-slider                                {width: 100%;
+                                                        margin-top: 15px;
+                                                        padding: 0 3%;
+                                                        position: relative;
+
+        img                                                 {width: 100%;
+                                                            height: 100%;}
+
+        h1                                                  {position: absolute;
+                                                            top: 30px;
+                                                            left: 50px;
+                                                            font-size: 1.7em;
+                                                            color: $primary__color;}
+                                                    
+                                                        }
+
+        &__contact-grid                                 {display: grid;
+                                                        grid-template-columns: repeat(1, 1fr);
+                                                        width: 100%;
+                                                        grid-gap: 20px;
+                                                        padding: 0 3%;}
+
+    &__boom-features                                    {display: grid;
+                                                        grid-template-columns: repeat(1, 1fr);
+                                                        grid-gap: 20px;
+                                                        width: 100%;
+                                                        padding: 0 3%;
+                                                        margin-top: 15px;
+                                                    
+    .main__slider-content                                   {height: 350px;
+                                                            position: relative;}
+                                                    
+                                                        }
+
+    &__financial-section--img                           {width: 100%;
+                                                        height: 430px;
+                                                        object-fit: cover;}
+
+                                                    }
+// End of Main Boom Features
+
+// The Main
+main                                                {width: 97%;
+                                                    margin: 0 auto;
+
+    .main                                               {width: 100%;
+
+        &__slider                                           {height: 300px;
+                                                            position: relative;
+                                                        
+            img                                                 {width: 100%;
+                                                                height: 100%;
+                                                                object-fit: fill;}
+
+            a                                                   {text-decoration: none;}
+                                                        
+                                                            }
+
+
+
+        &__buttons                                          {width: 100%;
+                                                            display: grid;
+                                                            grid-template-columns: repeat(1, 1fr);
+                                                            background: $primary__color;
+
+            a                                                   {text-decoration: none;
+                                                                width: 100%;
+                                                                text-align: center;
+                                                                padding: 2%;
+                                                                display: flex;
+                                                                align-items: center;
+                                                                justify-content: center;
+                                                                color: #000;
+                                                                height: 68px;
+                                                            
+                &:not(:last-child)                                  {border-bottom: 1px solid #B8B8B8;}
+
+                &:hover                                             {border-bottom: 5px solid #0D4391;}
+
+                &.bottom                                            {border-bottom: 5px solid #0D4391;}
+                                                            
+                                                                }
+        
+                                                            }
+
+            &__financial                                        {background: #F7F7F7;
+                                                                padding: 40px 0;
+                                                                margin-top: 10px;
+                                                                box-shadow:0 0 2px 2px #CECECE;}
+    
+            &__financial-head                                   {padding: 0 3%;
+                                                                width: 100%;
+                                                                font-size: 1.2rem;}
+    
+            &__financial-slider                                 {width: 100%;
+                                                                height: auto;
+                                                                margin-top: 15px;
+                                                                position: relative;
+                                                                padding: 0 3%;
+                                                            
+                button                                              {background: rgba(14, 67, 145, 1.0);
+                                                                    height: 80px;
+                                                                    width: 50px;
+                                                                    position: absolute;
+                                                                    cursor: pointer;
+                                                                    border: none;
+                                                                    color: $primary__color;
+                                                                    z-index: 10;
+                                                                    top: 35%;
+                                                                    transition: 0.5s;
+                                                                    font-size: 1.3rem;
+                                                                    text-shadow: 1px 1px 1px   #000;
+                                                                    display: none;
+    
+                    &:hover                                             {background: grey;}
+    
+                    &.btn__bg                                           {background: grey;}
+                                                                
+                    &.button2                                           {right: 0;}
+                    &.button1                                           {left: 0;}
+                                                                
+                                                                    }
+                                                            
+                                                                }
+    
+            &__financial-slider--container                     {height: 100%;
+                                                                width: 100%;
+                                                                overflow: hidden;}
+    
+            &__financial-slider--child                          {width: 100%;
+                                                                height: 100%;
+                                                                display: flex;
+                                                                flex-direction: column;}
+    
+            &__financial-slider--child1                         {width: 100%;
+                                                                height: 100%;
+                                                                display: grid;
+                                                                grid-template-columns: repeat(1, 1fr);
+                                                                grid-gap: 20px;
+                                                                transition: 0.5s;
+                                                            
+                &.slide2                                            {margin-top: 20px;}
+                                                            
+                                                                }
+    
+            &__slider-content                                   {position: relative;
+    
+                img                                                 {width: 100%;
+                                                                    height: 100%;
+                                                                    object-fit: cover;
+                                                                    }
+    
+                h1                                                  {color: $primary__color;
+                                                                    font-size: 1.7rem;}
+                            
+                a                                                   {color: $primary__color;
+                                                                    position: inherit;
+                                                                    bottom: 20px;
+                                                                    text-decoration: none;
+                                                                
+                    i                                                   {font-size: 1.2rem;}
+                                                                
+                                                                    }
+    
+                section                                             {display: flex;
+                
+                    i                                                   {font-size: 1.7rem;
+                                                                        margin-right: 5px;
+                                                                        color: $button__bg;}
+                
+                                                                    }
+    
+    
+                                                                }
+    
+            &__slider-underlay                                  {position: absolute;
+                                                                bottom: 0;
+                                                                padding: 20px;
+                                                                height: 45%;
+                                                                width: 100%;
+                                                                background: rgba(0, 0, 0, 0.5);
+                                                            
+            h1                                                  {font-size: 1.5rem;}
+                                                        
+                                                            
+                                                                }
+
+        // The Second Slider
+        &__second-slider                                    {width: 100%;
+                                                            padding: 0 3%;
+                                                            padding-right: 3%;
+                                                            height: 100%;
+                                                            margin-top: 20px;
+                                                            display: grid;
+                                                            grid-template-columns: repeat(1, 1fr);
+                                                            grid-gap: 20px;
+                                                            padding-bottom: 20px;
+                                                        
+            br                                                  {display: flex;}
+                                                        
+                                                            }
+
+        &__second-slider1                                   {background: #ECECEC;
+                                                            padding: 10px 15px;
+                                                            position: relative;
+                                                            overflow: hidden;
+                                                            height: 250px;
+                                                        
+            h1                                                  {font-size: 1.75rem;
+                                                                color: $secondary__color;}
+
+            p                                                   {color: rgba(91, 91, 91, 1.0);
+                                                                line-height: 1.4rem;
+                                                                font-size: 1.05rem;}
+
+            a                                                   {position: absolute;
+                                                                bottom: 10px;
+                                                                right: 20px;
+                                                                text-decoration: none;
+                                                                color: $secondary__color;}
+                                                        
+                                                            }
+
+        &__radio                                                {position: absolute;
+                                                                bottom: 10px;
+                                                                left: 20px;
+                                                                display: flex;}
+
+        &__radio1                                               {width: 11px;
+                                                                height: 11px;
+                                                                border-radius: 50%;
+                                                                background: rgba(148, 148, 148, 1.0);
+                                                                margin-right: 10px;
+                                                                transition: 0.3s;
+                                                                cursor: pointer;
+
+            &.radio-blue                                            {background: $secondary__color;}
+                                                            
+            &:hover                                                 {background: $secondary__color;}
+                                                            
+                                                                }
+
+        &__second-slider-container                              {width: 100%;
+                                                                height: 60%;
+                                                                overflow: hidden;}
+
+        &__second-slider-child                                  {width: 500%;
+                                                                height: 100%;
+                                                                display: flex;
+                                                                transition: 0.3s;}
+
+        &__second-slider-child1                                 {width: 100%;
+
+            p                                                       {margin-bottom: 30px;
+                                                                    margin-top: 10px;}
+        
+            a                                                       {position: initial;
+                                                                    color: $top__nav-link;
+                                                                
+                &:hover                                                 {text-decoration: underline;}
+                                                                
+                                                                    }
+            
+                                                                }
+        // End of Second Slider
+
+        // Main Financial Body
+        &__financial-body                                       {display: grid;
+                                                                grid-template-columns: repeat(1, 1fr);
+                                                                grid-gap: 20px;
+                                                                height: auto;
+                                                                width: 100%;
+                                                                padding: 0 3%;
+                                                                padding-right: 3%;
+                                                                margin-top: 15px;}
+
+        &__financial-body1                                      {width: 100%;
+                                                                height: 100%;
+                                                            
+            iframe                                                  {width: 100%;
+                                                                    height: 100%;
+                                                                    border: none;}
+                                                            
+                                                                }
+        // End of Main Financial Body
+
+
+                                                        }
+
+
+                                                    }
+// End of Main
+
+// The Footer Nav
+.footer__nav                                        {margin: 0 auto;
+                                                    width: 100%;
+                                                    margin-top: 10px;
+                                                    color: $top__nav-link;
+                                                    font-size: sizes(smallest1);
+                                                    padding-left: 1%;
+                                                
+    a                                                   {text-decoration: none;
+                                                        color: $top__nav-link;}
+                                                    
+                                                    }
+ // End of Footer nav
+
+// The Footer
+footer                                              {width: 100%;
+                                                    margin-left: auto;
+                                                    margin-right: auto;
+                                                    margin-top: 10px;
+                                                
+    .footer                                             {width: 100%;
+    
+        &__top                                              {background: $footer-top--bg;
+                                                            padding: 35px 3%;
+                                                            padding-right: 3%;
+                                                            display: grid;
+                                                            grid-template-columns: repeat(1, 1fr);
+                                                            grid-gap: 1%;}
+
+        &__top1                                             {width: 100%;
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            margin-top: 30px;
+        
+            p                                               {color: $primary__color;
+                                                            margin-bottom: 10px;
+                                                            font-size: 1.3rem;
+                                                            display: flex;
+                                                            align-items: center;}
+
+            span                                                {font-size: 0.8rem;
+												                color:#C1C9C9 ;
+												                text-decoration: none;
+                                                                margin-left: 5%;
+                                                                margin-top: 5px;}
+        
+            a                                                   {font-size: 0.8rem;
+												                color:#C1C9C9 ;
+												                text-decoration: none;
+                                                                margin-left: 5%;
+                                                                margin-top: 5px;
+                                                            
+                i                                                   {font-size: 0.6rem;}
+                                                            
+                                                                }
+        
+                                                            }
+
+        &__bottom                                           {background: $footer-bottom--bg;
+                                                            width: 100%;
+                                                            padding: 25px 4%;
+                                                            display: flex;
+                                                            flex-direction: column-reverse;
+
+                                                        
+            p                                                   {color: #C9C9C9;
+                                                                font-size: 0.8rem;
+                                                            
+                &:first-child                                       {margin-bottom: 15px;}
+                                                            
+                                                                }
+                                                        
+                                                            }
+
+        &__bottom1                                          {width: 100%;
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            margin-top: 30px;
+
+            &:first-child                                       {padding-right: 15%;}
+            
+            a                                                   {font-size: 0.8rem;
+												                color:#C1C9C9 ;
+												                text-decoration: none;
+                                                                margin-left: 0%;
+                                                                margin-top: 5px;
+                                                            
+                i                                                   {font-size: 0.6rem;}
+                                                            
+                                                                }
+    
+            
+                                                            }
+    
+                                                        }
+                                                
+                                                    }
+// End of Footer
+
+}
+// End of Mobile

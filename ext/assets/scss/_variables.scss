@@ -1,0 +1,60 @@
+/*Declaring Old SCSS Variables*/
+$primary__color: rgba(255, 255, 255, 1.0);
+
+$secondary__color:  rgba(13, 66, 143, 1.0);
+
+$secondary__hover: rgba(0, 34, 88, 1.0);
+
+$nav__bg: rgba(13, 66, 142, 1.0);
+
+$top__nav-bg: rgba(252, 249, 230, 1.0);
+
+$top__nav-link: rgba(41, 106, 200, 1.0);
+
+$top__nav-color: #D93E3C;
+
+$button__bg: rgba(254, 125, 5, 1.0);
+
+$newsletter__color: rgba(13, 67, 145, 1.0);
+
+$newsletter__bg: rgba(237, 237, 237, 1.0);
+
+$contact-bg: rgba(23, 94, 197, 1.0);
+
+$footer-top--bg: rgba(75, 97, 113, 1.0);
+
+$footer-bottom--bg: rgba(0, 13, 34, 1.0);
+
+
+
+
+/*End of Declaring Old SCSS Variables*/
+
+/*Declaring New SCSS Variables*/
+$primary__color2: rgba(250, 100, 0, 1.0);
+
+$control__background: rgba(51, 51, 51, 1.0);
+
+$first__slider-button: rgba(55, 68, 73, 1.0);
+
+$second__slider-btn: rgba(30, 45, 50, 1.0);
+
+$response__button: rgba(233, 97, 6, 1.0);
+
+$chat__hover: rgba(245, 245, 245, 1.0);
+
+$chat__text: rgba(98, 98, 98, 1.0);
+/*End of Declaring New SCSS Variables*/
+
+
+/*Declaring Vanilla Css Variables*/
+:root                                       {--primary-color: rgba(255, 255, 255, 1.0);
+                                            --secondary-color: rgba(0, 17, 74, 1.0);
+                                            --useless-faded: rgba(186, 190, 186, 1.0);
+                                            --useless-faded1: rgba(169, 173, 170, 1.0);
+                                            --content-color:rgba(255, 255, 255, 1.0);
+                                            --upper-text--color:rgba(128, 128, 128, 1.0);
+                                            --nav-color: rgba(51, 51, 51, 0.98);}
+
+
+                                           

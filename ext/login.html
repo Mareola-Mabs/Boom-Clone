@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MONEX BOOM - Login</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            body{width: 100%;
+                height: 100vh;
+                padding: 0;
+                margin: 0;
+                display: grid;
+                place-content: center;
+                background: rgba(0, 0, 0, 0.01);
+                font-family: sans-serif;
+
+
+            }
+
+            .form__container{
+                width: 300px;
+                height: 250px;
+                background: #fff;
+                box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+                border-radius: 10px;
+                padding: 20px;
+                box-sizing: border-box;
+                position: relative;
+            }
+
+            input[type="email"], input[type="password"]{
+                width: 95%;
+                height: 30px;
+                border-radius: 5px;
+                border: 1px solid rgba(0, 0, 0, 0.3);
+                color: rgba(0, 0, 0, 0.8);
+                padding-left: 10px;
+            }
+
+            input[type="email"].shift{
+               animation: shake 0.2s ease-in-out;
+            }
+            input[type="password"].shift{
+               animation: shake 0.2s ease-in-out;
+            }
+
+            @keyframes shake{
+                0%{margin-left: 0rem;}
+                25%{margin-left: 0.2rem;}
+                75%{margin-left: -0.2rem;}
+                100%{margin-left: 0rem;}
+            }
+
+            input[type="email"]:focus, input[type="password"]:focus{
+                outline: 3px solid rgba(135, 206, 235, 0.5);
+                border: 1px solid rgba(135, 206, 235, 1.0);
+            }
+
+            input[type="email"]{
+                margin-top: 5px;
+                margin-bottom: 10px;
+            }
+
+            input[type="password"]{
+                margin-top: 5px;
+            }
+
+            label{
+                font-size: 0.9rem;
+                color: rgba(0, 0, 0, 0.8);
+            }
+
+            input[type="submit"]{
+                position: absolute;
+                bottom: 20px;
+                right: 25px;
+                height: 25px;
+                width: 65px;
+                border-radius: 5px;
+                font-size: 0.65rem;
+                border: none;
+                color: rgba(255, 255, 255, 1.0);
+                background: rgba(0, 0, 0, 0.9);
+                cursor: pointer;
+            }
+
+            section{
+                font-size: 0.7rem;
+                color: red;
+                position: absolute;
+                left: 20px;
+                margin-top: 10px;
+                opacity: 80%;
+            }
+
+            .checkbox{
+                margin-top: 30px;
+                user-select: none;
+            }
+
+            .ckeckbox label{
+                font-size: 0.9rem;
+            }
+
+            input[type="checkbox"]{
+                border: 1px solid rgba(0, 0, 0, 0.3);
+                border-radius: 5px;
+                color: green;
+
+            }
+
+            input[type="checkbox"]:focus{
+                outline: 3px solid rgba(135, 206, 235, 0.5);
+                border: 1px solid rgba(135, 206, 235, 1.0);
+                outline-offset: 2px;
+            }
+
+            input[type="checkbox"]:checked + label{
+                color: green;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="form__container">
+            <form action="" method="get" id="myform" onsubmit="return checkdata()">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <section class="error">
+                </section>
+
+                <div class="checkbox">
+                    <label for="checkbox">Remember me</label>
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                </div>
+                <input type="submit" name="" id="" value="LOG IN">
+            </form>
+        </div>
+        
+        <script async defer>
+            var i = 0
+            function checkdata(){
+                i++
+                var email = document.forms["myform"]["email"].value
+                var password = document.forms["myform"]["password"].value
+                var section = document.getElementsByTagName('section')[0]
+
+                if (email == ""){
+                    section.innerText ="Error, please enter your email"+" "+i;
+                    document.getElementsByTagName('input')[0].focus()
+                    document.getElementsByTagName('input')[0].classList.add("shift")
+                    setTimeout(()=>{
+                        document.getElementsByTagName('input')[0].classList.remove("shift")
+                    }, 200)
+                    return false
+                }
+                else if(password ==""){
+                    section.innerText ="Error, please enter the right password"+" "+i;
+                    document.getElementsByTagName('input')[1].focus()
+                    document.getElementsByTagName('input')[1].classList.add("shift")
+                    setTimeout(()=>{
+                        document.getElementsByTagName('input')[1].classList.remove("shift")
+                    }, 200)
+                    return false
+                }
+            }
+        </script>
+    </body>
+</html>

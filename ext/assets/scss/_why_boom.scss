@@ -1,0 +1,35 @@
+// Main Boom Features
+main .main                                          {
+
+    &__boom-features                                    {display: grid;
+                                                        grid-template-columns: repeat(3, 1fr);
+                                                        grid-gap: 20px;
+                                                        width: 100%;
+                                                        padding: 0 3%;
+                                                        margin-top: 15px;
+                                                    
+    .main__slider-content                                   {height: 350px;
+                                                            position: relative;}
+                                                    
+                                                        }
+
+                                                    }
+// End of Main Boom Features
+
+// The Footer Nav
+.footer__nav                                        {margin: 0 auto;
+                                                    width: 945px;
+                                                    margin-top: 10px;
+                                                    color: $top__nav-link;
+                                                    font-size: sizes(smallest1);
+                                                    padding-left: 1%;
+                                                
+    a                                                   {text-decoration: none;
+                                                        color: $top__nav-link;
+                                                    
+        i                                                   {margin-right: 10px;}
+                                                    
+                                                        }
+                                                    
+                                                    }
+ // End of Footer nav
