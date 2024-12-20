@@ -6,4 +6,4 @@ this will help to avoid errors as editing only the CSS and not SASS will not upd
 
 @Maerola......
  
-2.You Can Use only The Pure CSS Files, as These are The Files Linked In The HTML File. The CSS is Named 'PC.CSS'
+2.You can use the CSS files as alone if you want. But you have to discard the SCSS files.
